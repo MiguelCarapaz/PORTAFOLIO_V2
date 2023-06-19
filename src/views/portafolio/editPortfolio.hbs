@@ -24,13 +24,20 @@
                                 <label for="title">Title</label>
                             </div>
 
+
+                        <form action="/portafolio/edit/{{portfolio._id}}?_method=PUT" method="POST" class="d-inline" 
+                            enctype="multipart/form-data">
                             <!-- Category input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="category" type="text" placeholder="Enter your title..." required name="category"
                                 value="{{portfolio.category}}"/>
                                 <label for="category">Category</label>
                             </div>
-
+                            <!-- Image input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="image" type="file" placeholder="Select your imagen..."  name="image" />
+                                <label for="image">Image</label>
+                            </div>
                             <!-- Description input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="description" type="text" placeholder="Enter your message here..." style="height: 10rem" required name="description">{{portfolio.description}}</textarea>

@@ -6,6 +6,7 @@ const methodOverride = require('method-override');
 const passport = require('passport');
 const session = require('express-session');
 
+const fileUpload = require('express-fileupload')
 
 
 // Inicializaciones
@@ -22,6 +23,11 @@ app.engine('.hbs',engine({
     extname:'.hbs'
 }))
 app.set('view engine','.hbs')
+
+app.use(fileUpload({
+    useTempFiles : true,
+    tempFileDir : './uploads'
+}));
 // Middlewares 
 app.use(express.urlencoded({extended:false}))
 app.use(methodOverride('_method'))
