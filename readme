@@ -1,0 +1,14 @@
+credenciales 
+.env
+DBUSER=byrontosh
+DBPASSWORD=sistemas
+DBNAME=test
+
+CLOUD_NAME=da1v3y8tc
+API_KEY=147345217414151
+API_SECRET=Gxuk7nQLYcEhftRLymDlt_pTAkU
+
+HOST_MAILTRAP=sandbox.smtp.mailtrap.io
+PORT_MAILTRAP=2525 //cambiar este puerto con el que te 587 pra que funcione fuera de la universidad
+USER_MAILTRAP=903e599bd5defc
+PASS_MAILTRAP=fe1b2102ebaf53
